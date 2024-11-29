@@ -120,6 +120,8 @@ header {
 }
 .container {
   display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
 }
 .trending-end {
   width: 300px;
@@ -129,7 +131,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
-  width: 50%;
+  width: 60%;
 }
 .end-list p {
   margin: 0;
@@ -163,7 +165,8 @@ header {
 .image {
   width: 40%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-content: end;
 }
 .end-img button {
@@ -186,12 +189,14 @@ header {
   color: gray;
 }
 .articleImage img {
-width: 30%;
+width: 80%;
+
 
 }
 .articleImage {
   display: flex;
-justify-content: end;
+justify-content: flex-end;
+
 }
 .end-content  :first-child {
   border-radius: 20px;
@@ -201,4 +206,7 @@ justify-content: end;
 .bookmark {
   display: flex;
   justify-items: end;
+}
+.imt-txt {
+  display: flex;
 }
