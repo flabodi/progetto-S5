@@ -95,8 +95,8 @@ header {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .content .author {
@@ -120,6 +120,12 @@ header {
 }
 .container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  padding-right: 3%;
+ /* align-items: flex-start;
+ justify-content: space-between; */
 }
 .trending-end {
   width: 300px;
@@ -129,7 +135,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
-  width: 50%;
+  /* width: 60%; */
 }
 .end-list p {
   margin: 0;
@@ -155,6 +161,8 @@ header {
 }
 .trending-end {
   width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 .foto {
   width: 90px;
@@ -163,8 +171,9 @@ header {
 .image {
   width: 40%;
   display: flex;
-  flex-direction: column;
-  align-content: end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: start;
 }
 .end-img button {
   background-color: white;
@@ -186,15 +195,26 @@ header {
   color: gray;
 }
 .articleImage img {
-width: 30%;
+width: 80%;
+
 
 }
 .articleImage {
   display: flex;
-justify-content: end;
+justify-content: flex-end;
+align-items: center
+
 }
 .end-content  :first-child {
   border-radius: 20px;
  
  
+}
+.bookmark {
+  display: flex;
+  justify-items: end;
+}
+.imt-txt {
+  display: flex;
+  justify-content: space-between;
 }
